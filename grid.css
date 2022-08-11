@@ -1,0 +1,141 @@
+body{
+    margin: 0%;
+    padding: 5%;
+}
+
+.part1{
+    flex-flow: column wrap;
+    flex-direction: row;
+    display: grid;
+    height: 25vh;
+    grid-template-columns: 1fr 1fr;
+    height: 200px;
+    
+}
+.a {
+    text-align: center;
+    background: white;
+    border: 3px solid;
+    border-color: black;
+    grid-column-start: 25%;
+    grid-column-end: 25%;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+}
+ 
+.b {
+    background: url(img/Osos-todos.jpg) no-repeat;
+    grid-column-start: 25%;
+    grid-column-end: 25%;
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+    border: 3px solid;
+    border-color: black;
+ 
+}
+
+.part2{
+  display: grid;
+  height: 25vh;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px ;
+ }
+.c {
+    background: url(img/Oso-Fushia.jpg)no-repeat;
+    grid-column-start: 25%;
+    grid-column-end: 25%;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    border: 3px solid;
+    border-color: black;
+}
+ .d {
+    background: url(img/Oso-Verde.jpg) no-repeat;
+    grid-column-start: 25%;
+    grid-column-end: 25%;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    border: 3px solid;
+    border-color: black;
+}
+.e {
+    background: gold;
+    grid-column-start: 25%;
+    grid-column-end: 25%;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    border: 3px solid;
+    border-color: black;
+}
+.f {
+    background: blueviolet;
+    grid-column-start: 25%;
+    grid-column-end: 25%;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    border: 3px solid;
+    border-color: black;
+}  
+.g {
+    background: blue;
+    grid-column-start: 25%;
+    grid-row: 25%;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid;
+    border-color: black;
+}
+.h {
+    background: violet;
+    grid-column-start: 25%;
+    grid-row: 25%;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid;
+    border-color: black;
+}
+
+.part3{
+  display: grid;
+  height: 25vh;
+  grid-template-columns: 1fr 1fr 2fr;
+  column-gap: 20px;
+  row-gap: 20px ;
+}
+.i {
+    background: url(/img/Oso-AzulCielo.jpg) no-repeat;
+    grid-column-start: 25%;
+    grid-row: 25%;
+    padding: 10px;
+    text-align: center; 
+    color: aliceblue;
+    border: 3px solid;
+    border-color: black;
+}
+.j {
+    background: url(/img/Oso-Rosa.jpg) no-repeat;
+    grid-column-start: 25%;
+    grid-row: 25%;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    border: 3px solid;
+    border-color: black;
+}
+.k {
+    background: url(/img/Osos-LoveAll.jpg) no-repeat;
+    grid-column-start: 50%;
+    grid-row: 25%;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    border: 3px solid;
+    border-color: black;
+}
