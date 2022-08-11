@@ -1,141 +1,110 @@
-body{
-    margin: 0%;
-    padding: 5%;
+body {
+    background-color: rgb(228, 151, 205);
+    display: flex;
+    justify-content: center;
 }
-
-.part1{
-    flex-flow: column wrap;
-    flex-direction: row;
+.grid_container {
+    height: 1400px;
+    width: 957px;
+    background-color: #fff;
+    padding-left: 80px;
+    padding-top: 80px;
+}
+.grid1 {
     display: grid;
-    height: 25vh;
-    grid-template-columns: 1fr 1fr;
-    height: 200px;
-    
+    grid-template: "boxA boxB" 200px/420px 420px;
+    column-gap: 55px;
 }
-.a {
-    text-align: center;
-    background: white;
-    border: 3px solid;
-    border-color: black;
-    grid-column-start: 25%;
-    grid-column-end: 25%;
-    padding: 10px;
-    text-align: center;
-    color: aliceblue;
+.grid1 h2 {
+  border: 1px solid black;
 }
- 
-.b {
-    background: url(img/Osos-todos.jpg) no-repeat;
-    grid-column-start: 25%;
-    grid-column-end: 25%;
-    text-align: center;
-    padding: 10px;
-    color: aliceblue;
-    border: 3px solid;
-    border-color: black;
- 
+.grid img {
+  border: 1pz solid black;
+}
+#boxA {
+  margin-top: 0;
+  grid-area: boxA;
+  display: grid;
+  width: 420px;
+  height: 200px;
+  place-items: center;
+  font-weight: 400;
+  font-size: 48px;
+}
+#boxB {
+  grid-area: boxB;
+  width: 420px;
+  height: 200px;
+  border: 1px solid black;
 }
 
-.part2{
+.grid2 {
+  margin-top: 48px;
   display: grid;
-  height: 25vh;
-  grid-template-columns: 1fr 1fr 2fr 1fr;
-  column-gap: 20px;
-  row-gap: 20px ;
- }
-.c {
-    background: url(img/Oso-Fushia.jpg)no-repeat;
-    grid-column-start: 25%;
-    grid-column-end: 25%;
-    padding: 10px;
-    text-align: center;
-    color: aliceblue;
-    border: 3px solid;
-    border-color: black;
+  grid-template: "boxC boxD boxF boxG" 200px "boxE boxE boxF boxH" 200px/150px 150px 335px 150px;
+  row-gap: 48px;
+  column-gap: 35px;
 }
- .d {
-    background: url(img/Oso-Verde.jpg) no-repeat;
-    grid-column-start: 25%;
-    grid-column-end: 25%;
-    padding: 10px;
-    text-align: center;
-    color: aliceblue;
-    border: 3px solid;
-    border-color: black;
+#boxC {
+  grid-area: boxC;
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
 }
-.e {
-    background: gold;
-    grid-column-start: 25%;
-    grid-column-end: 25%;
-    padding: 10px;
-    text-align: center;
-    color: aliceblue;
-    border: 3px solid;
-    border-color: black;
+#boxD {
+  grid-area: boxD;
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
 }
-.f {
-    background: blueviolet;
-    grid-column-start: 25%;
-    grid-column-end: 25%;
-    padding: 10px;
-    text-align: center;
-    color: aliceblue;
-    border: 3px solid;
-    border-color: black;
-}  
-.g {
-    background: blue;
-    grid-column-start: 25%;
-    grid-row: 25%;
-    padding: 10px;
-    text-align: center;
-    border: 3px solid;
-    border-color: black;
+#boxE {
+  grid-area: boxE;
+  width: 335px;
+  height: 200px;
+  border: 1px solid black;
 }
-.h {
-    background: violet;
-    grid-column-start: 25%;
-    grid-row: 25%;
-    padding: 10px;
-    text-align: center;
-    border: 3px solid;
-    border-color: black;
+#boxF {
+  grid-area: boxF;
+  width: 335px;
+  height: 448px;
+  border: 1px solid black;
+}
+#boxG {
+  grid-area: boxG;
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+}
+#boxH {
+  grid-area: boxH;
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
 }
 
-.part3{
+.grid3 {
   display: grid;
-  height: 25vh;
-  grid-template-columns: 1fr 1fr 2fr;
-  column-gap: 20px;
-  row-gap: 20px ;
+  grid-template: "boxI boxJ boxK" 200px/150px 150px 500px;
+  column-gap: 35px;
+  margin-top: 48px;
 }
-.i {
-    background: url(/img/Oso-AzulCielo.jpg) no-repeat;
-    grid-column-start: 25%;
-    grid-row: 25%;
-    padding: 10px;
-    text-align: center; 
-    color: aliceblue;
-    border: 3px solid;
-    border-color: black;
+#boxI {
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
 }
-.j {
-    background: url(/img/Oso-Rosa.jpg) no-repeat;
-    grid-column-start: 25%;
-    grid-row: 25%;
-    padding: 10px;
-    text-align: center;
-    color: aliceblue;
-    border: 3px solid;
-    border-color: black;
+#boxJ {
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
 }
-.k {
-    background: url(/img/Osos-LoveAll.jpg) no-repeat;
-    grid-column-start: 50%;
-    grid-row: 25%;
-    padding: 10px;
-    text-align: center;
-    color: aliceblue;
-    border: 3px solid;
-    border-color: black;
+#boxK {
+  width: 520px;
+  height: 200px;
+  border: 1px solid black;
+}
+p{
+  text-align: center;
+  font-weight: 400;
+  font-size: 48px;
 }
